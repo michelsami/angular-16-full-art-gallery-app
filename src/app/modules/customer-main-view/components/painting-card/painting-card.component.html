@@ -1,0 +1,18 @@
+<div class="gallery">
+  <div
+    class="card"
+    *ngFor="let painting of paintings"
+    (click)="openPaintingDetails(painting._id)"
+  >
+    <img
+      [src]="painting.image"
+      alt="{{ painting.name }}"
+      class="painting-image"
+    />
+    <div class="card-body">
+      <h3 class="card-title">{{ painting.name }}</h3>
+      <h4>{{ painting.price }}</h4>
+      <p class="card-description">{{ painting.description }}</p>
+    </div>
+  </div>
+</div>

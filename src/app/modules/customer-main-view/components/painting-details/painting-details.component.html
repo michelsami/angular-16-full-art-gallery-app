@@ -1,0 +1,19 @@
+<br />
+<div class="painting-details">
+  <div class="painting-image">
+    <img [src]="paintingData.image" alt="{{ paintingData.name }}" />
+  </div>
+  <div class="painting-info">
+    <h2 class="painting-title">{{ paintingData.name }}</h2>
+    <p class="painting-description">{{ paintingData.description }}</p>
+    <div class="price-quantity">
+      <div class="price">{{ paintingData.price | currency }}</div>
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" />
+      </div>
+    </div>
+    <button class="add-to-cart-btn" (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>
+<br />
