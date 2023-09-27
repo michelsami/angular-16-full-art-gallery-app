@@ -15,13 +15,13 @@ body {
 }
 
 .container {
-	position: block;
+	//position: block;
 	// top: 50%;
 	// left: 50%;
 	//transform: translate(-50%, -50%);
 	margin: auto;
-	max-width: 80%;
-	width: 100%;
+	max-width: 40%;
+	//width: 100%;
 	background: #fff;
 
 }
@@ -46,6 +46,8 @@ body {
 #check:checked~.login {
 	display: inline-block;
 }
+
+
 
 #check {
 	display: inline-block;
@@ -113,4 +115,11 @@ body {
 
 .signup label:hover {
 	text-decoration: underline;
+}
+
+span {
+	p {
+		text-align: center;
+		color: red;
+	}
 }

@@ -16,7 +16,7 @@ const routes: Routes = [
      {path: 'painting-details/:paintingID', component: PaintingDetailsComponent },
      {path: 'cart', component: CartComponent },
      {path: 'login', component: LoginComponent },
-     {path: 'register', component: RegisterComponent },
+     {path: 'signup', component: RegisterComponent },
   ]},
 ];
 
